@@ -1,0 +1,132 @@
+thresholds:
+  ex_multiplier: 2.0
+  wh_multiplier: 2.0
+
+priors:
+  connection_hu: 0.10
+  gps_lu: 0.20
+  idle: 0.35
+  wenco_error: 0.20
+  load_in_n05: 0.10
+  mismatch: 0.05
+
+feature_probs:
+  MAX_LAT_HU_AT_ENTRY_5000:
+    connection_hu: 0.80
+    gps_lu: 0.05
+    idle: 0.10
+    wenco_error: 0.10
+    load_in_n05: 0.05
+    mismatch: 0.05
+
+  LU_OFFLINE_PCT_15:
+    connection_hu: 0.05
+    gps_lu: 0.85
+    idle: 0.10
+    wenco_error: 0.15
+    load_in_n05: 0.05
+    mismatch: 0.20
+
+  LU_ALL_NAN:
+    connection_hu: 0.02
+    gps_lu: 0.95
+    idle: 0.05
+    wenco_error: 0.05
+    load_in_n05: 0.02
+    mismatch: 0.10
+
+  N02_DUR_30:
+    connection_hu: 0.30
+    gps_lu: 0.20
+    idle: 0.75
+    wenco_error: 0.20
+    load_in_n05: 0.15
+    mismatch: 0.20
+
+  N05_REAL_RATIO_LOW:
+    connection_hu: 0.20
+    gps_lu: 0.25
+    idle: 0.70
+    wenco_error: 0.25
+    load_in_n05: 0.20
+    mismatch: 0.15
+
+  HAS_VIMS:
+    connection_hu: 0.10
+    gps_lu: 0.10
+    idle: 0.10
+    wenco_error: 0.90
+    load_in_n05: 0.30
+    mismatch: 0.10
+
+  HAS_N06:
+    connection_hu: 0.50
+    gps_lu: 0.40
+    idle: 0.30
+    wenco_error: 0.70
+    load_in_n05: 0.50
+    mismatch: 0.60
+
+  MOTION_APPROACH:
+    connection_hu: 0.30
+    gps_lu: 0.20
+    idle: 0.20
+    wenco_error: 0.40
+    load_in_n05: 0.80
+    mismatch: 0.30
+
+  MOTION_STOP_NEAR:
+    connection_hu: 0.40
+    gps_lu: 0.20
+    idle: 0.50
+    wenco_error: 0.50
+    load_in_n05: 0.85
+    mismatch: 0.20
+
+  DIST_HU_LU_MIN_FAR:
+    connection_hu: 0.20
+    gps_lu: 0.30
+    idle: 0.20
+    wenco_error: 0.30
+    load_in_n05: 0.10
+    mismatch: 0.80
+
+  N11_OVERLAP_LOW:
+    connection_hu: 0.30
+    gps_lu: 0.35
+    idle: 0.25
+    wenco_error: 0.40
+    load_in_n05: 0.20
+    mismatch: 0.75
+
+  LOAD_CONFIRMED:
+    connection_hu: 0.30
+    gps_lu: 0.30
+    idle: 0.20
+    wenco_error: 0.60
+    load_in_n05: 0.90
+    mismatch: 0.40
+
+  SEQ_N05_N01_GAP:
+    connection_hu: 0.40
+    gps_lu: 0.40
+    idle: 0.35
+    wenco_error: 0.70
+    load_in_n05: 0.80
+    mismatch: 0.40
+
+  HU_SPEED_AT_N05_END_HIGH:
+    connection_hu: 0.60
+    gps_lu: 0.20
+    idle: 0.15
+    wenco_error: 0.30
+    load_in_n05: 0.10
+    mismatch: 0.20
+
+  N01_DUR_RATIO_LOW:
+    connection_hu: 0.20
+    gps_lu: 0.20
+    idle: 0.15
+    wenco_error: 0.50
+    load_in_n05: 0.30
+    mismatch: 0.25

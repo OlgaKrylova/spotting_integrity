@@ -1,6 +1,7 @@
 import math
 import yaml
 from pathlib import Path
+from typing import Optional
 
 CONFIG_PATH = Path(__file__).parent / "config.yaml"
 
@@ -45,7 +46,7 @@ def binarize_features(features: dict) -> dict:
     return b
 
 
-def hard_rules(features: dict) -> str | None:
+def hard_rules(features: dict) -> Optional[str]:
     if features.get("HAS_VIMS"):
         return "wenco_error"
     if (
